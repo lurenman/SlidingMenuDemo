@@ -6,12 +6,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TabHost;
-import android.widget.TextView;
 
 import com.example.administrator.slidingmenudemo.TabActivity.TabActivity1;
 import com.example.administrator.slidingmenudemo.TabActivity.TabActivity2;
@@ -39,6 +37,7 @@ public class TabHostActivity extends TabActivity {
     private static Context mContext;
     private leftMenuFragment mLeftMenuFragment;
     private static SlidingMenu menu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -177,8 +176,8 @@ public class TabHostActivity extends TabActivity {
     private void tabCenterClick() {
 
     }
-    public static void toggle()
-    {
+
+    public static void toggle() {
         menu.toggle();
     }
 }
